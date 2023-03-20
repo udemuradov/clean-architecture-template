@@ -74,10 +74,10 @@ class _NavigationPageState extends State<NavigationPage> {
               context.read<NavigationBloc>().add(PageTapped(index: value));
             },
             items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.home)),
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.download_for_offline_rounded)),
-              BottomNavigationBarItem(icon: Icon(Icons.analytics)),
+                  icon: Icon(Icons.download_for_offline_rounded), label: ''),
+              BottomNavigationBarItem(icon: Icon(Icons.analytics), label: ''),
             ]));
   }
 }
